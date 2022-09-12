@@ -1,0 +1,34 @@
+@use '../breakpoints' as breakpoints;
+
+.Container {
+    width: 100%;
+    padding: 1rem;
+}
+
+@include breakpoints.media-up(sm) {
+    .Container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@include breakpoints.media-up(md) {
+    .Container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@include breakpoints.media-up(lg) {
+    .Container {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+@include breakpoints.media-up(xl) {
+    .Container {
+        padding-left: 16rem;
+        padding-right: 16rem;
+    }
+}
